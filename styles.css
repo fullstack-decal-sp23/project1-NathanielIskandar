@@ -1,14 +1,20 @@
 .grid {
     display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 
+}
+
+body {
+    margin: 0;
 }
 
 *{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.image {
-    background-image: url("E:/Berkeley/FullStack_Decal/Project/project1-NathanielIskandar/images/nate_whiteboarding.jpeg");
+.background-image-about-page {
+    background-image: url("images/nate_whiteboarding.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,14 +22,32 @@
     height: 100vh;
     width: 100%;
     margin: 0;
+    display:  flex;
+    justify-content: flex-end;
+    align-items: center;
   }
+
+.background-image-work-page {
+    background-image: url("images/nate_success.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* height: 100vh;
+    width: 100%;
+    margin: 0;
+    display:  flex;
+    justify-content: flex-end;
+    align-items: center; */
+}
 
 .NavigationBar {
     position: absolute;
     text-align: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: flex-end;
+    left: 20%;
+    right: 20%;
+    /* transform: translate(-50%, -50%); */
+    /* justify-content: flex-end; */
     align-items: right;
 }
 
@@ -45,23 +69,21 @@
 }
 
 
-.rightHalf {
+.bio {
     text-align: left;
     width:35%;
-    margin:auto;
     margin-right: 100px;
-}
-
-.bio {
     font-size: large;
 }
 
 .project-space {
-    grid-column: 2 / 8;
+    grid-area: 1/3/12/10;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
-.project-image {
-    grid-column: 8 / 12;
+.project-survey {
+    grid-area: 5/8/12/12;
+    
 }
 
 .leftPortion {
@@ -70,4 +92,13 @@
 
 label {
     cursor: default;
-  }
+}
+
+.survey-question {
+    font-size: 30px;
+}
+
+#github-id{
+    width: 50px;
+    
+}
