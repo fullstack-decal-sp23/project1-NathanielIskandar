@@ -10,7 +10,7 @@ body {
 }
 
 *{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Courier New', monospace;
 }
 
 .background-image-about-page {
@@ -28,17 +28,19 @@ body {
   }
 
 .background-image-work-page {
-    background-image: url("images/nate_success.jpeg");
+    background-image: url("images/arduino.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    /* height: 100vh;
-    width: 100%;
-    margin: 0;
-    display:  flex;
-    justify-content: flex-end;
-    align-items: center; */
+}
+
+.background-image-contact-page {
+    background-image: url("images/prototype_demo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .NavigationBar {
@@ -46,15 +48,13 @@ body {
     text-align: center;
     left: 20%;
     right: 20%;
-    /* transform: translate(-50%, -50%); */
-    /* justify-content: flex-end; */
     align-items: right;
 }
 
 .NavigationBar a {
-    color: gray;
+    color: #585d5e;
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
@@ -62,6 +62,8 @@ body {
 
 .NavigationBar a:hover {
     color: black;
+    transition: 0.5s;
+    font-size: xx-large;
 }
 
 .NavigationBar a.active {
@@ -72,7 +74,7 @@ body {
 .bio {
     text-align: left;
     width:35%;
-    margin-right: 100px;
+    margin-right: 90px;
     font-size: large;
 }
 
@@ -81,13 +83,17 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.project-survey {
-    grid-area: 5/8/12/12;
-    
+
+.contact-section {
+    grid-area: 1/4/12/7;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-.leftPortion {
-    grid : 6/8
+.profile-pic-section {
+    grid-area: 4/7/12/8;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    
 }
 
 label {
@@ -100,5 +106,8 @@ label {
 
 #github-id{
     width: 50px;
-    
+}
+
+#linkedin-id {
+    width: 50px;
 }
